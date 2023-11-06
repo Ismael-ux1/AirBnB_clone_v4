@@ -21,9 +21,9 @@ $(document).ready(function () {
     $('.amenities h4').empty();
     for (let index = 0; index < selected_amenities.length; index++) {
       if (selected_amenities.length == 1 || index == selected_amenities.length - 1) {
-        $('.amenities h4').append(checked_amenities[index].name);
+        $('.amenities h4').append(selected_amenities[index].name);
       } else {
-        $('.amenities h4').append('' + checked_amenities[index].name + ', ');
+        $('.amenities h4').append('' + selected_amenities[index].name + ', ');
       }
     }
     if (selected_amenities.length >= 3) {
